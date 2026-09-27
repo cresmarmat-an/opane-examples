@@ -1,0 +1,143 @@
+{
+  // The look of this example. Edit and save while it runs: it restyles live.
+  // Colours are "#rrggbb" or "#rrggbbaa"; sizes are interface units.
+
+  "colors": {
+    "background": "#0b0e16",
+    "surface": "#1a2030",
+    "surfaceHovered": "#243047",
+    "surfacePressed": "#121826",
+    "accent": "#7c9cff",
+    "accentHovered": "#9db4ff",
+    "text": "#eef2ff",
+    "textMuted": "#9aa6c4",
+    "border": "#ffffff26"
+  },
+  "cornerRadius": 12,
+
+  "widgets": {
+    "button": {
+      "normal": {
+        "background": { "linear": ["#2b3550", "#1f2740"], "angle": 90 },
+        "border": { "color": "#ffffff22", "width": 1 },
+        "radius": 10,
+        "shadows": [ { "color": "#00000066", "offset": [0, 3], "blur": 8 } ]
+      },
+      "hovered": {
+        "background": { "linear": ["#3a4870", "#2a3456"], "angle": 90 },
+        "shadows": [ { "color": "#7c9cff55", "offset": [0, 0], "blur": 16, "spread": 1 } ],
+        "scale": 1.03
+      },
+      "pressed": { "scale": 0.97, "offset": [0, 1] },
+      "disabled": { "opacity": 0.4 },
+      "transition": 0.14
+    },
+    "accentButton": {
+      "normal": {
+        "background": { "linear": ["#8ea9ff", "#6a7dff", "#9b6bff"], "angle": 0 },
+        "radius": 10,
+        "textColor": "#ffffff",
+        "shadows": [ { "color": "#6a7dff66", "offset": [0, 4], "blur": 14 } ]
+      },
+      "hovered": { "scale": 1.04, "shadows": [ { "color": "#9b6bffaa", "offset": [0, 0], "blur": 22, "spread": 2 } ] },
+      "pressed": { "scale": 0.97 }
+    },
+    "textInput": {
+      "normal": { "background": "#0e1320cc", "border": { "color": "#ffffff1f", "width": 1 }, "radius": 8 },
+      "focused": { "border": { "color": "#7c9cff", "width": 2 }, "shadows": [ { "color": "#7c9cff44", "offset": [0, 0], "blur": 10 } ] }
+    },
+    "dropdown": {
+      "normal": { "background": "#0e1320cc", "border": { "color": "#ffffff1f", "width": 1 }, "radius": 8 },
+      "hovered": { "background": "#18203299" }
+    },
+    "popup": {
+      "normal": {
+        "background": "#151b2ae6",
+        "backdropBlur": 14,
+        "border": { "color": "#ffffff26", "width": 1 },
+        "radius": 12,
+        "shadows": [ { "color": "#00000080", "offset": [0, 10], "blur": 30 } ]
+      }
+    },
+    "tooltip": {
+      "normal": { "background": "#0b0e16f0", "radius": 8, "border": { "color": "#7c9cff66", "width": 1 } }
+    },
+    "checkboxBox": {
+      "normal": { "background": "#0e1320", "border": { "color": "#ffffff33", "width": 1.5 }, "radius": 6 },
+      "selected": { "background": { "linear": ["#8ea9ff", "#9b6bff"], "angle": 45 }, "border": { "color": "#00000000", "width": 0 } }
+    },
+    "toggleTrack": {
+      "normal": { "background": "#0e1320", "border": { "color": "#ffffff33", "width": 1 }, "radius": 10 },
+      "selected": { "background": { "linear": ["#8ea9ff", "#9b6bff"], "angle": 0 } }
+    },
+    "toggleKnob": {
+      "normal": { "background": "#dfe6ff", "radius": 7, "shadows": [ { "color": "#00000066", "offset": [0, 1], "blur": 4 } ] }
+    },
+    "sliderTrack": { "normal": { "background": "#0e1320", "radius": 3 } },
+    "sliderFill": { "normal": { "background": { "linear": ["#8ea9ff", "#9b6bff"], "angle": 0 }, "radius": 3 } },
+    "sliderThumb": {
+      "normal": { "background": "#ffffff", "radius": 10, "shadows": [ { "color": "#9b6bff88", "offset": [0, 0], "blur": 10 } ] },
+      "selected": { "shadows": [ { "color": "#9b6bffcc", "offset": [0, 0], "blur": 18, "spread": 2 } ] }
+    },
+    "progressTrack": { "normal": { "background": "#0e1320", "radius": 6 } },
+    "progressFill": { "normal": { "background": { "linear": ["#5de0c0", "#7c9cff"], "angle": 0 }, "radius": 6 } },
+    "scrollbarThumb": { "normal": { "background": "#ffffff44", "radius": 4 } }
+  },
+
+  "styles": {
+    "titleBar": {
+      "background": { "linear": ["#141a2bf0", "#10141ff0"], "angle": 90 },
+      "border": { "color": "#ffffff14", "width": 1 },
+      "backdropBlur": 10
+    },
+    "titleButton": {
+      "normal": { "radius": 6 },
+      "hovered": { "background": "#ffffff1a" },
+      "pressed": { "background": "#ffffff10" }
+    },
+    "closeButton": {
+      "normal": { "radius": 6 },
+      "hovered": { "background": "#e5484d" },
+      "pressed": { "background": "#b83a3e" }
+    },
+    "glass": {
+      "background": "#1a2135a8",
+      "backdropBlur": 22,
+      "border": { "color": "#ffffff26", "width": 1 },
+      "radius": 16,
+      "shadows": [ { "color": "#00000055", "offset": [0, 12], "blur": 32 } ]
+    },
+    "navButton": {
+      "normal": { "radius": 8, "textColor": "#9aa6c4" },
+      "hovered": { "background": "#ffffff12", "textColor": "#eef2ff" },
+      "selected": {
+        "background": { "linear": ["#7c9cff44", "#9b6bff22"], "angle": 0 },
+        "border": { "color": "#7c9cff66", "width": 1 },
+        "textColor": "#ffffff"
+      },
+      "transition": 0.18
+    },
+    "card": {
+      "normal": {
+        "background": { "linear": ["#222b44ee", "#161c2eee"], "angle": 120 },
+        "border": { "color": "#ffffff1a", "width": 1 },
+        "radius": 18,
+        "shadows": [ { "color": "#00000066", "offset": [0, 8], "blur": 24 } ]
+      },
+      "hovered": {
+        "border": { "color": "#7c9cff88", "width": 1 },
+        "shadows": [ { "color": "#7c9cff44", "offset": [0, 10], "blur": 32, "spread": 2 } ],
+        "scale": 1.03
+      },
+      "transition": 0.2
+    },
+    "orb": {
+      "normal": {
+        "background": { "radial": ["#ffe7a8", "#ff7eb3", "#7c3aed00"], "center": [0.4, 0.35] },
+        "radius": 70,
+        "glow": { "color": "#ff7eb366", "blur": 40, "spread": 4 }
+      },
+      "hovered": { "scale": 1.08, "glow": { "color": "#ffe7a888", "blur": 50, "spread": 8 } }
+    }
+  }
+}
